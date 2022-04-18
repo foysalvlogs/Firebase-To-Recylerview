@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "912375903582",
+    "project_id": "fir-to-recylerview",
+    "storage_bucket": "fir-to-recylerview.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:912375903582:android:586bb96878c9dc5c350bcf",
+        "android_client_info": {
+          "package_name": "com.foysaldev.firebasedatatorecylerview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "912375903582-8pqp7ust930t3qgsan1rnicq8noua3bm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7Ooiinn1J76O03oETnGqD42Kwm9vRG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "912375903582-8pqp7ust930t3qgsan1rnicq8noua3bm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
