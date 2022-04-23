@@ -1,6 +1,9 @@
 package com.foysaldev.firebasedatatorecylerview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,12 +33,25 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     }
 
     @Override
+    @SuppressLint("RecyclerView")
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         User user = list.get(position);
         holder.fullname.setText(user.getFullName());
         holder.address.setText(user.getAddress());
         holder.phone.setText(user.getPhone());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, DetailsActivity.class);
+/*                intent.putExtra("position", position);*/
+                intent.putExtra("fullname", list.get(position).getFullName());
+                intent.putExtra("address", list.get(position).getAddress());
+                intent.putExtra("phone", list.get(position).getPhone());
+                context.startActivity(intent);
+            }
+        });
 
     }
 
